@@ -5,10 +5,12 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      para: <p id="para">Hello, I've learnt to use the full-stack evaluation tool. This makes me so happy</p>
+      para: "" 
     };
   }
-  renderParagraph = () => {};
+  renderParagraph = () => {
+	  this.setState({para: <p id="para">Hello, I've learnt to use the full-stack evaluation tool. This makes me so happy</p>})
+  };
   render() {
     return (
       <>
