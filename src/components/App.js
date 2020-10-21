@@ -10,12 +10,11 @@ class App extends React.Component {
   }
   renderParagraph = () => {
     this.setState({
-      para: (
+      para:
         <p id="para">
           Hello, I've learnt to use the full-stack evaluation tool. This makes
           me so happy
         </p>
-      )
     });
   };
   render() {
