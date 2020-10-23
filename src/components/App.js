@@ -11,20 +11,18 @@ class App extends React.Component {
       this.setState({ display: true });
     };
   }
-  //
+
   render() {
     return (
       <>
-        <div id="main">
-          <button onClick={this.renderParagraph} id="click"></button>
-          {this.state.display && (
-            <p id="para">
-              "Hello, I've learnt to use the full-stack evaluation tool. This
-              makes me so happy"
-            </p>
-          )}
-          {/* Do not remove this main div!! */}
-        </div>
+        <div id="main">{/* Do not remove this main div!! */}</div>
+        <button onClick={this.renderParagraph} id="click"></button>
+        {this.state.display && (
+          <p id="para">
+            "Hello, I've learnt to use the full-stack evaluation tool. This
+            makes me so happy"
+          </p>
+        )}
       </>
     );
   }
