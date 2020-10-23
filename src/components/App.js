@@ -23,6 +23,7 @@ class App extends React.Component {
               makes me so happy"
             </p>
           )}
+          {/* Do not remove this main div!! */}
         </div>
       </>
     );
