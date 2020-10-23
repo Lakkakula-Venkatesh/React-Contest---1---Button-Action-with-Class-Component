@@ -8,7 +8,7 @@ class App extends React.Component {
       para: ""
     };
     this.renderParagraph = () => {
-      this.setState({para: "Hello, I've learnt to use the full-stack evaluation tool. This makes me so happy"})
+      this.setState({para: <p id="para">"Hello, I've learnt to use the full-stack evaluation tool. This makes me so happy"</p>})
     }
   }
   
@@ -17,7 +17,7 @@ class App extends React.Component {
       <>
         <div id="main">
           <button onClick={this.renderParagraph} id="click"></button>
-          <p id="para">{this.state.para}</p>
+          {this.state.para}
         </div>
       </>
     );
